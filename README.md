@@ -9,4 +9,4 @@ MIT Licensed
 
 ## About me
 
-I mostly work on web projects and Vim plugins, but the occasional need arises for various bits of code. [Feek free to check out some of my other stuff](https://github.com/jaxbot)
+I mostly work on web projects and Vim plugins, but the occasional need arises for various bits of code. [Feel free to check out some of my other stuff](https://github.com/jaxbot)
