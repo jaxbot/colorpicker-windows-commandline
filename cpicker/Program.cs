@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace cpicker
 {
@@ -27,8 +28,10 @@ namespace cpicker
             
             colorDialog1.CustomColors = new int[] { ColorTranslator.ToOle(inputColor) };
             colorDialog1.Color = inputColor;
-            colorDialog1.ShowDialog();
-            Console.WriteLine("#" + string.Format("0x{0:X8}", colorDialog1.Color.ToArgb()).Substring(4, 6));
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Console.WriteLine("#" + string.Format("0x{0:X8}", colorDialog1.Color.ToArgb()).Substring(4, 6));
+            }
         }
     }
 }
